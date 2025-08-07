@@ -22,7 +22,7 @@ RNA editing levels can be confounded by gene expression, as highly expressed gen
 - Matches gene expression rows by Ensembl ID and ensures sample order consistency.
 - Runs linear regression for each Alu element:
   ```
-  AEI_region ~ Expression_gene
+  AEI_region ~ Expression_gene + residual
   ```
   Extracts residuals as the deconfounded editing signal.
 - Uses `foreach` and `doParallel` for parallel processing across all Alu elements.
