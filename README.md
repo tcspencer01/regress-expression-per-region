@@ -24,7 +24,7 @@ RNA editing levels can be confounded by gene expression, as highly expressed gen
   ```
   AEI_region ~ Expression_gene + residual
   ```
-  Extracts residuals as the deconfounded editing signal.
+- Extracts residuals as the deconfounded editing signal.
 - Uses `foreach` and `doParallel` for parallel processing across all Alu elements.
 
 **The ja1/ja2 job array system (as demonstrated in the ".sh" files) parallelizes these functions by sample, allowing you to run this for multiple Alus in multiple samples all at once, greatly reducing runtime.**
