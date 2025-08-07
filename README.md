@@ -17,7 +17,7 @@ RNA editing levels can be confounded by gene expression, as highly expressed gen
 
 ## Functions
 
-- Cleans and processes expression matrix (e.g., NA filtering, imputation, Ensembl ID matching).
+- Cleans and processes the expression matrix (e.g., NA filtering, imputation, Ensembl ID matching).
 - Merges editing data with Alu–host gene annotations.
 - Matches gene expression rows by Ensembl ID and ensures sample order consistency.
 - Runs linear regression for each Alu element:
