@@ -6,7 +6,7 @@ This R script performs **parallelized regression of gene expression levels from 
 
 ## Background
 
-RNA editing levels can be confounded by gene expression, as highly expressed genes tend to produce more reads and therefore more detectable editing. This can introduce spurious correlations between genotype and editing that are actually driven by expression differences. To control for this, the script regresses out gene expression from each Alu element’s AEI value. Residuals from this regression represent editing levels independent of expression, and are used as the phenotype in downstream genetic association analyses.
+RNA editing levels can be confounded by gene expression, as highly expressed genes tend to produce more reads and therefore more detectable editing. This can introduce spurious correlations between genotype and editing that are actually driven by differences in gene expression. To control for this, the script regresses out gene expression from each Alu element’s AEI value. Residuals from this regression represent editing levels independent of expression, and are used as the phenotype in downstream genetic association analyses.
 
 ## Inputs
 
