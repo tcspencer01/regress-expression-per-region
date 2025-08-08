@@ -20,20 +20,20 @@ RNA editing levels can be confounded by gene expression, as highly expressed gen
 - Cleans and processes the expression matrix (e.g., NA filtering, imputation, Ensembl ID matching).
 - Merges editing data with region <–> host gene annotations.
 - Matches gene expression rows by Ensembl ID and ensures sample order consistency.
-- Runs linear regression for each Alu element:
+- Runs linear regression for each region:
   ```
   AEI_region ~ Expression_gene + residual
   ```
 - Extracts residuals as the deconfounded editing signal.
 - Uses `foreach` and `doParallel` for parallel processing across all Alu elements.
 
-**The ja1/ja2 job array system (as demonstrated in the ".sh" files) parallelizes these functions by sample, allowing you to run this for multiple Alus in multiple samples all at once, greatly reducing runtime.**
+**The ja1/ja2 job array system (as demonstrated in the ".sh" files) parallelizes these functions by sample, allowing you to run this for multiple regions in multiple samples all at once, greatly reducing runtime.**
 
 ## Output
 
 A tab-separated file where:
-- Rows = Alu regions
+- Rows = Editing regions
 - Columns = Samples
-- Values = Expression-residualized AEI per sample per Alu region
+- Values = Expression-residualized AEI per sample per region
 
 This output was used as the **phenotype input** for tensorQTL mapping.
