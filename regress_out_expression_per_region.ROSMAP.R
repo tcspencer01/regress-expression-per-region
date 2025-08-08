@@ -14,21 +14,21 @@ editing_file = args[1]
 outfile = args[2]
 
 # ####################TO TEST ON HOFFMAN2 INTERACTIVE NODE (48G)
-# editing_file = "/u/project/gxxiao/gxxiao2/tcspence/ROSMAP/grch38/region_based/output/rosmap_elaine_editing_sites.no_race_in_model.regression_all_together._1_phenotype_pcs_regressed_out.txt"
-# outfile = "/u/project/gxxiao/gxxiao2/tcspence/ROSMAP/grch38/region_based/output/TEST.txt"
+# editing_file = "REDACTED.txt"
+# outfile = "TEST.txt"
 # ##############################################################
 
-ensembl_annotated_alu_file = "/u/project/gxxiao/tcspence/projects/ediTWAS/annotation/hg38.fa.Alus.RNAEditingIndexer.stranded.ensembl_host_gene_overlapped_less_stringent.bed"
+ensembl_annotated_alu_file = "REDACTED.bed"
 
-expression_matrix_file = "/u/project/gxxiao/tcspence/projects/ediTWAS/data/ROSMAP/bulk_RNA_seq/phenotype_tables/expression/TPM_normalized_expression.ROSMAP_bulk.552_samples.expanded_info.tsv"
+expression_matrix_file = "REDACTED.tsv"
 
-bam_conversion_file = "/u/project/gxxiao/tcspence/projects/ediTWAS/dataset_info/ROSMAP/bam_to_rosmap_id_conversion_table.txt"
+bam_conversion_file = "REDACTED.txt"
 
-conversion_file = "/u/project/gxxiao/tcspence/projects/ediTWAS/dataset_info/ROSMAP/ROSMAP_biospecimen_metadata.ID_conversion.txt"
+conversion_file = "REDACTED.txt"
 
-vcf_header_file = "/u/project/gxxiao/tcspence/projects/ediTWAS/dataset_info/ROSMAP/rosmap_vcf_header.txt"
+vcf_header_file = "REDACTED.txt"
 
-full_covariates_file = "/u/project/gxxiao/tcspence/projects/ediTWAS/dataset_info/ROSMAP/known_covariates_site_based_tensorQTL_input.txt"
+full_covariates_file = "REDACTED.txt"
 
 ######################################################################
 
