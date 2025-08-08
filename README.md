@@ -2,7 +2,7 @@
 
 # AEI Expression Regression Script
 
-This R script performs **parallelized regression of gene expression levels from RNA editing data**, specifically region-based Alu Editing Index (AEI) values. The script was used on ROSMAP bulk RNA-seq datasets aligned to the GRCh38 genome and is designed to prepare RNA editing phenotypes for downstream association testing (e.g., edQTL or ediTWAS analyses).
+This R script performs **parallelized regression of gene expression levels from RNA editing data**, specifically Alu Editing Index (AEI) values. The script was used on bulk RNA-seq datasets aligned to the GRCh38 genome and is designed to prepare RNA editing phenotypes for downstream association testing (e.g., edQTL, TWAS, or GWAS colocalization analyses).
 
 ## Background
 
@@ -11,7 +11,7 @@ RNA editing levels can be confounded by gene expression, as highly expressed gen
 ## Inputs
 
 - **editing_file**: A TSV with AEI values (Alu Editing Index) per region (Alu element) per sample.
-- **expression_matrix_file**: A large, TPM-normalized gene expression matrix from ROSMAP bulk RNA-seq data.
+- **expression_matrix_file**: A large, TPM-normalized gene expression matrix from bulk RNA-seq data.
 - **ensembl_annotated_alu_file**: A BED file mapping Alu regions to host genes via Ensembl IDs (created using BEDtools intersect).
 - **covariate and conversion tables**: Used to align metadata and match sample names across input datasets.
 
