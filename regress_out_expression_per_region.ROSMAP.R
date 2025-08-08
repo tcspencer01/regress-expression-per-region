@@ -1,5 +1,5 @@
 #Regress expression out of phenotype (editing) matrix
-#ROSMAP hg38 (region-based)
+#hg38 (region-based)
 
 rm(list=ls())
 
